@@ -1,1 +1,2 @@
-<img width="1297" height="694" alt="image" src="https://github.com/user-attachments/assets/5b701db7-8971-4e49-a9cf-2c0496eb1de1" />
+**Задача:** Выполнить все операции над графиками. 
+! [image alt] (https://github.com/Anasteishenn/BSUIR/blob/main/semester-1/TMOIS/Lab_2/diagram.png?raw=true)
