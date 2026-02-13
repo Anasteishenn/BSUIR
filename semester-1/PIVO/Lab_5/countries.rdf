@@ -1,0 +1,520 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/user/ontologies/2025/11/countries/"
+     xml:base="http://www.semanticweb.org/user/ontologies/2025/11/countries/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/user/ontologies/2025/11/countries">
+        <rdfs:comment xml:lang="en">This is an ontology about countries</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/11/countries#hasCapital -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/11/countries#hasCapital">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/11/countries#Country"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/11/countries#Capital"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/11/countries#hasClimate -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/11/countries#hasClimate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/11/countries#Geography"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/11/countries#Climate"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/11/countries#hasPoliticalSystem -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/11/countries#hasPoliticalSystem">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/11/countries#Country"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/11/countries#PoliticalSystem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/11/countries#hasReligion -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/11/countries#hasReligion">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/11/countries#Population"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/11/countries#Religion"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/11/countries#locatedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/11/countries#locatedIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/11/countries#Country"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/11/countries#Continent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/11/countries#speaksLanguage -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/11/countries#speaksLanguage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/11/countries#Population"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/11/countries#Language"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/11/countries#usesCurrency -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/11/countries#usesCurrency">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/11/countries#Economy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/11/countries#Currency"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/11/countries#area -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/11/countries#area">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/11/countries#AdministrativeDivision"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/11/countries#Geography"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/11/countries#averageTemperature -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/11/countries#averageTemperature">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/11/countries#Climate"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/11/countries#birthRate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/11/countries#birthRate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/11/countries#Population"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/11/countries#code -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/11/countries#code">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/11/countries#Country"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/11/countries#Currency"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/11/countries#Language"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>ISO, currency, language</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/11/countries#economicValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/11/countries#economicValue">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/11/countries#GDP"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/11/countries#languageCount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/11/countries#languageCount">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/11/countries#Country"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/11/countries#Population"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/11/countries#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/11/countries#name">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/11/countries#population -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/11/countries#population">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/11/countries#Population"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/11/countries#yearEstablished -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/11/countries#yearEstablished">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/11/countries#Country"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/11/countries#AdministrativeDivision -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/11/countries#AdministrativeDivision">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/11/countries#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/11/countries#Argiculture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/11/countries#Argiculture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/11/countries#Economy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/11/countries#Authoritarianism -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/11/countries#Authoritarianism">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/11/countries#PoliticalRegime"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/11/countries#Capital -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/11/countries#Capital">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/11/countries#City"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/11/countries#City -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/11/countries#City">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/11/countries#AdministrativeDivision"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/11/countries#Climate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/11/countries#Climate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/11/countries#Geography"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/11/countries#Continent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/11/countries#Continent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/11/countries#Geography"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/11/countries#Country -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/11/countries#Country"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/11/countries#Currency -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/11/countries#Currency">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/11/countries#Economy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/11/countries#Democracy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/11/countries#Democracy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/11/countries#PoliticalRegime"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/11/countries#Economy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/11/countries#Economy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/11/countries#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/11/countries#EthnicGroup -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/11/countries#EthnicGroup">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/11/countries#Population"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/11/countries#FormOfGoverment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/11/countries#FormOfGoverment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/11/countries#PoliticalSystem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/11/countries#GDP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/11/countries#GDP">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/11/countries#Economy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/11/countries#Geography -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/11/countries#Geography">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/11/countries#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/11/countries#Industry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/11/countries#Industry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/11/countries#Economy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/11/countries#Language -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/11/countries#Language">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/11/countries#Population"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/11/countries#Monarchy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/11/countries#Monarchy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/11/countries#FormOfGoverment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/11/countries#NaturalResource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/11/countries#NaturalResource">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/11/countries#Geography"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/11/countries#PoliticalRegime -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/11/countries#PoliticalRegime">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/11/countries#PoliticalSystem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/11/countries#PoliticalSystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/11/countries#PoliticalSystem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/11/countries#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/11/countries#Population -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/11/countries#Population">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/11/countries#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/11/countries#Province -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/11/countries#Province">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/11/countries#AdministrativeDivision"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/11/countries#Region -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/11/countries#Region">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/11/countries#Geography"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/11/countries#RegionUnit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/11/countries#RegionUnit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/11/countries#AdministrativeDivision"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/11/countries#Religion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/11/countries#Religion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/11/countries#Population"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/11/countries#Republic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/11/countries#Republic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/11/countries#FormOfGoverment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/11/countries#State -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/11/countries#State">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/11/countries#AdministrativeDivision"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/11/countries#Asia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/11/countries#Asia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/11/countries#Continent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/11/countries#ContinentalClimate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/11/countries#ContinentalClimate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/11/countries#Climate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/11/countries#Europe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/11/countries#Europe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/11/countries#Continent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/11/countries#France -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/11/countries#France">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/11/countries#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/11/countries#Germany -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/11/countries#Germany">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/11/countries#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/11/countries#NaturalGas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/11/countries#NaturalGas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/11/countries#NaturalResource"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/11/countries#Oil -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/11/countries#Oil">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/11/countries#NaturalResource"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/11/countries#PoliticalSystem_France -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/11/countries#PoliticalSystem_France">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/11/countries#PoliticalSystem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/11/countries#PoliticalSystem_Germany -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/11/countries#PoliticalSystem_Germany">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/11/countries#PoliticalSystem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/11/countries#TemperatureClimate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/11/countries#TemperatureClimate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/11/countries#Climate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/11/countries#опо -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/11/countries#опо">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/11/countries#Country"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
